@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+ html {
+    scroll-behavior: smooth;
+ }
+
+ body {
+    margin: 0;
+    background-color: brown;
+    color: black;
+ }
+
+ h1 {
+    margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 64px;
+        font-weight: 900;
+        position: relative;
+        top: 16px;
+        z-index: 1;
+        pointer-events: none;
+ }
+
+
+ .container {
+     max-width: 768px;
+     margin-inline: auto;
+ }
+
+ #tabellone {
+    display: grid;
+    grid-template-columns:repeat(8,60px);
+    margin: 20px auto;
+    max-width: 500px;
+     background-color: #0c0b1d;
+     color: #c58b8b;
+     border-radius: 8px;
+     border: 8px solid #0c0b1d;
+ }
+ button {
+     cursor: pointer;
+     background-color: #ddcd3a;
+     color: #c74a2b;
+     border: none;
+     width: 130px;
+     min-height: 36px;
+     font-weight: 700;}
+
+.cella {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        border: solid 1px;
+        align-items: center
+        ;
+     }
+     .cella.evidenziata {
+        background-color: #c74a2b;
+     }
